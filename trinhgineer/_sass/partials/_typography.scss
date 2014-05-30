@@ -72,6 +72,10 @@ main {
     blockquote {
       color: lighten($bodyText, 70%);
     }
+    figcaption {
+      font-style: italic;
+      color: lighten($bodyText, 10%);
+    }
   }
 }
 
