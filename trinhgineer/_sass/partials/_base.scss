@@ -1,0 +1,31 @@
+// Colors
+$headerBackground: #8e5371;
+$headerText: #31cf2b;
+$bodyBackground: #f3f3f3;;
+$bodyText: #423732;;
+$portfolioBackground: #56845F;
+$writingBackground: #ABB45F;
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$base-font-family: sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 2.1vmin;
+$base-line-height: 1.6;
+
+// Fixed Font
+$fixed-font-family: "Courier New", monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Element Specific Font
+$p-font-family: "Libre Baskerville", Georgia, serif;
+
+// Headings
+$header-font-weight: $bold;
+
+@import "modules/all";

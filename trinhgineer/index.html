@@ -1,0 +1,60 @@
+---
+layout: default
+title: "Scott Trinh"
+tagline: "Freelance Full Stack Web Developer based in Atlanta, Georgia, USA. Python, Django, JavaScript, HTML5/CSS3, Sass, Jekyll"
+availability: "Open"
+---
+
+<header class="index-page" role="header">
+  <img src="images/burst.svg" alt="Logo Burst" id="logo">
+  <h1 id="title">{{ page.title }}</h1>
+  <h2 id="tagline">{{ page.tagline }}</h1>
+</header>
+
+<main role="main">
+
+<div class="portfolio">
+  <h2 class="heading">Portfolio</h2>
+  <div class="three column stackable ui grid">
+    {% for portfolio in site.portfolio %}
+      <div class="column">
+        <div class="ui segment">
+          <a href="{{ portfolio.href }}">
+            <img src="{{ portfolio.img.src }}" alt="{{ portfolio.img.alt }}">
+            <h3>{{ portfolio.title }}</h3>
+            <p>{{ portfolio.description }}</p>
+            <ul class="tags">
+              {% for tag in portfolio.tags %}
+                <li class="ui label">{{ tag }}</li>
+              {% endfor %}
+            </ul>
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="writing">
+  <h2 class="heading">Writing</h2>
+  <ul class="three column stackable ui grid">
+    {% for post in site.posts limit: 3 %}
+      <li class="column">
+      <div class="ui segment">
+      <a href="{{ post.url }}">
+        <h3>{{ post.title }}</h3>
+        <time datetime="{{ post.date }}">{{ post.date | date: "%e %B %Y" }}</time>
+        {{ post.excerpt }}
+        ...</a>
+      </div>
+      </li>
+    {% endfor %}
+    <li class="column">
+    <div class="ui segment">
+      <a href="#">Read More >></a>
+    </div>
+    </li>
+  </ul>
+</div>
+
+</main>

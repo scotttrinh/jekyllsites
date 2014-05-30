@@ -1,0 +1,213 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-weight: 400;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: sans-serif;
+  font-size: 2.1vmin;
+  line-height: 1.6;
+  color: #423732;
+  background-color: #f3f3f3; }
+  body a {
+    color: #7c675e;
+    text-decoration: none; }
+
+header {
+  background-color: #8e5371;
+  color: #31cf2b;
+  font-family: "Courier New", monospace; }
+  header #title {
+    background-color: #f3f3f3;
+    color: #423732;
+    font-weight: 400; }
+  header #tagline {
+    background-color: #6e4057;
+    font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em; }
+
+h1 {
+  font-size: 6vmin;
+  font-weight: 600; }
+
+h2 {
+  font-size: 4.5vmin;
+  font-weight: 600; }
+
+h3 {
+  font-size: 4vmin;
+  font-weight: 600; }
+
+h4 {
+  font-size: 3.5vmin;
+  font-weight: 600; }
+
+h5 {
+  font-size: 3vmin;
+  font-weight: 600; }
+
+p {
+  font-family: "Libre Baskerville", Georgia, serif; }
+
+main div h2.heading {
+  background-color: #f3f3f3;
+  color: #423732;
+  letter-spacing: 0.2em; }
+main div a {
+  text-decoration: none;
+  color: #423732; }
+main .ui.segment time {
+  display: block;
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 0.5em; }
+main article blockquote {
+  color: #efecea; }
+
+footer {
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  footer a {
+    border-bottom: 1px black solid;
+    padding-bottom: 0.2em; }
+
+header .ui.menu {
+  background-color: #8e5371; }
+header .ui.menu .item {
+  color: #31cf2b; }
+  header .ui.menu .item img {
+    height: 1em; }
+
+.index-page {
+  width: 100%;
+  height: 100vh; }
+  .index-page #logo {
+    position: absolute;
+    top: 15vh;
+    width: 51vw; }
+  .index-page #title {
+    display: block;
+    position: absolute;
+    top: 15vh;
+    left: 52vw;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 32%; }
+  .index-page #tagline {
+    position: absolute;
+    bottom: 15vh;
+    display: block;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em; }
+
+main.writing {
+  background-color: #abb45f;
+  width: 100%;
+  overflow: hidden; }
+
+main > h1 {
+  display: inline-block;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-left: 2%;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #f3f3f3; }
+main .portfolio ul.tags > li.ui.label {
+  margin-top: 1em; }
+main > div {
+  padding-bottom: 2em; }
+main article {
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 4em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  margin: 0 auto;
+  margin-bottom: 4em;
+  max-width: 50em;
+  overflow: hidden;
+  background-color: #f3f3f3; }
+  main article p {
+    margin-top: 1em; }
+  main article blockquote {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.7em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    border-left: 12px solid #8e5371;
+    background-color: #404040; }
+    main article blockquote cite {
+      font-weight: 100;
+      font-size: 0.9em;
+      display: block;
+      margin-top: 0.5em; }
+    main article blockquote cite:before {
+      content: "\2014 \2009"; }
+  main article a {
+    border-bottom: 2px solid #7c675e; }
+main > div {
+  min-height: 100vh;
+  overflow: hidden;
+  padding-left: 1vw;
+  padding-right: 1vw; }
+main div.portfolio {
+  background-color: #56845f; }
+  main div.portfolio img {
+    width: 100%; }
+main div.writing {
+  background-color: #abb45f; }
+main div h2.heading {
+  display: inline-block;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  margin-left: 1.8em;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+footer {
+  height: 25vh; }
+  footer div#social {
+    float: right; }
+    footer div#social a {
+      margin-left: 1em; }

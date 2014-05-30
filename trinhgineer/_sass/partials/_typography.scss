@@ -1,0 +1,89 @@
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $bodyText;
+  background-color: $bodyBackground;
+  a {
+    color: lighten($bodyText, 20%);
+    text-decoration: none;
+  }
+}
+
+header {
+  background-color: $headerBackground;
+  color: $headerText;
+  font-family: $fixed-font-family;
+  #title {
+    background-color: $bodyBackground;
+    color: $bodyText;
+    font-weight: $regular;
+  }
+  #tagline {
+    background-color: darken($headerBackground, 10%);
+    font-weight: $regular;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 1em;
+}
+h1 {
+  font-size: 6vmin;
+  font-weight: $bold;
+}
+h2 {
+  font-size: 4.5vmin;
+  font-weight: $bold;
+}
+h3 {
+  font-size: 4vmin;
+  font-weight: $bold;
+}
+h4 {
+  font-size: 3.5vmin;
+  font-weight: $bold;
+}
+h5 {
+  font-size: 3vmin;
+  font-weight: $bold;
+}
+p {
+  font-family: $p-font-family;
+}
+
+main {
+  div h2.heading {
+    background-color: $bodyBackground;
+    color: $bodyText;
+    letter-spacing: 0.2em;
+  }
+  div a {
+    text-decoration: none;
+    color: $bodyText;
+  }
+  .ui.segment time {
+    display: block;
+    font-style: italic;
+    text-align: right;
+    margin-bottom: 0.5em;
+  }
+  article {
+    blockquote {
+      color: lighten($bodyText, 70%);
+    }
+  }
+}
+
+footer {
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  a {
+    border-bottom: 1px black solid;
+    padding-bottom: 0.2em;
+  }
+  ul#social > li {
+  }
+}
