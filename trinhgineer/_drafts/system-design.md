@@ -11,7 +11,7 @@ to this stage in the application development process.
 
 ## The Business Process
 
-I am constantly on the lookout for procedures in my business that make
+I am constantly on the lookout for procedures at my job that make
 us all groan when we have to do them. Those tasks are usually ripe for
 tool-building and streamlining, and it gives me a great sense of pride
 to know I've made something slightly more bearable for myself and my
@@ -34,7 +34,43 @@ is the current process:
    inform them of the consignment fee that we would levy based on the
    selling price.
 6. If everyone agrees to the terms, we create a new item in the system,
-   associate the item with the customer, and print out a purchase order
+   associate the item with the customer, and print out a receiving log
    with the details.
 
+## The Components
 
+Given the business process outlined above, here are the individual
+components that I have identified:
+
++ An item search component that has pluggable backends to handle eBay,
+  Craigslist, and local item history searches. Can add more as more
+  sources of data become available.
++ An item creation grid that streamlines the process of importing data
+  from the item search component, and allows pricing to be set by margin
+  percentage or explicitly.
++ Consignment vendor database that tracks information about the consignee,
+  and ties to LightSpeed's customer database to keep contact information
+  in sync.
++ An order generation script that takes the new items, and creates a
+  purchase order, and fulfills the purchase order using the [Receiving
+  Log](/2014/05/30/angular-django-app.html) API to increment the
+  inventory and print a paper receipt for the customer.
+
+## The Process Flow
+
+<figure>
+  <img src="/images/flowchart-useditem.png">
+  <figcaption>Flow Chart of the Business Process</figcaption>
+</figure>
+
+Here is the basic flow from the user's perspective. You can see that
+each process lends itself to a modular component we can build up. Some
+of them can even be generic, reusable components, such as the item
+editing grid, and obviously the data backends for pricing data.
+
+## The Stack
+
+As with the Receiving Log function, we will use the existing
+Django/Python/PostgreSQL backend. On the client side, I will be using
+Facebook's ReactJS for UI views and connecting to the backends via our
+REST/Hypermedia API.

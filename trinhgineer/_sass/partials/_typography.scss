@@ -69,12 +69,29 @@ main {
     margin-bottom: 0.5em;
   }
   article {
+    img {
+      max-width: 100%;
+    }
     blockquote {
       color: lighten($bodyText, 70%);
     }
     figcaption {
       font-style: italic;
       color: lighten($bodyText, 10%);
+    }
+    ul, ol {
+      display: block;
+      margin-top: 1rem;
+      margin-left: 3rem;
+    }
+    ul {
+      list-style-type: disc;
+    }
+    ol {
+      list-style-type: decimal;
+    }
+    li {
+      font-family: $p-font-family;
     }
   }
 }
