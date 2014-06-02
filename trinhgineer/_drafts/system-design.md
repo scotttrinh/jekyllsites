@@ -33,4 +33,8 @@ is the current process:
    help the consignee determine the selling price they want to set, and
    inform them of the consignment fee that we would levy based on the
    selling price.
-6. 
+6. If everyone agrees to the terms, we create a new item in the system,
+   associate the item with the customer, and print out a purchase order
+   with the details.
+
+
