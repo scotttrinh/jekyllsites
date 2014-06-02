@@ -102,11 +102,23 @@ main .ui.segment time {
   font-style: italic;
   text-align: right;
   margin-bottom: 0.5em; }
+main article img {
+  max-width: 100%; }
 main article blockquote {
   color: #efecea; }
 main article figcaption {
   font-style: italic;
   color: #5f4f48; }
+main article ul, main article ol {
+  display: block;
+  margin-top: 1rem;
+  margin-left: 3rem; }
+main article ul {
+  list-style-type: disc; }
+main article ol {
+  list-style-type: decimal; }
+main article li {
+  font-family: "Libre Baskerville", Georgia, serif; }
 
 footer {
   padding-left: 3em;
